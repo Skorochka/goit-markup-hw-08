@@ -8,7 +8,7 @@
     --laber-color: #000000;
     --section-color: #E5E5E5;
     --section-team-color: #F5F4FA;
-
+    --border-color: #EEEEEE
 
 }
 
@@ -16,6 +16,9 @@
 
 html {
 	box-sizing: border-box;
+    width: 1600px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 *,
@@ -50,16 +53,18 @@ img {
       max-width: 100%;
       height: auto;
 }    
+.conteiner {
+    width: 1200px;
+}
+
+
 
 
 /* Header section styles */
 
 .conteiner-header {
-    width: 1200px;
     padding-top: 15px;
     padding-bottom: 15px ;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .header-section {
@@ -116,13 +121,13 @@ img {
 /*hero section styles*/
 .hero {
     min-height: 100vh;
-    padding-left: 235px;
-    padding-right: 235px;
+    padding-left: 234px;
+    padding-right: 234px;
     padding-top: 200px;
     padding-bottom: 200px;
     background: var(--dark-bg-color)
 }
-.main-conteiner {
+.hero .conteiner {
     max-width: 700px;
     margin: auto;
 }
@@ -155,6 +160,10 @@ img {
 
 .main-section {
     align-items: center;
+    padding-top: 94px;
+}
+.latent-title {
+    display: none;
 }
 
 .main-points-section {
@@ -163,7 +172,9 @@ img {
 .main-points {
     max-width: 270px;
 }
-
+.main-points:not(:last-child) {
+    margin-right: 30px;
+}
 .main-title {
     font-weight: bold;
     font-size: 14px;
@@ -173,14 +184,33 @@ img {
     color: var(--title-text-color);
 }
 
+.main-paragraph {
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+}
 
-
-
-
-
-
-
+/*about us section*/
+.about-us-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.photo-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.photo-about-us .photo {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px*3) / 3 );
+}
 .section-title {
+    display: inline-block;
+    margin-right: 411px;
+    margin-left: 411px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1,17;
@@ -189,7 +219,33 @@ img {
     color: var(--title-text-color);
 }
 
+
+/*about our team section*/
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.about-team-section .section-title {
+    display: block;
+    margin-bottom: 50px;
+}
+.about-team-section .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.team-lead {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px*4) / 4 );
+
+}
+
 .team {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1,19;
@@ -199,9 +255,11 @@ img {
 }
 
 .team-profession {
-font-size: 16px;
-line-height: 1,19;
-letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
 }
 
 .main-section, 
@@ -215,13 +273,22 @@ letter-spacing: 0.03em;
 }
 
 
-
-
-
 /* Footer section styles */
 
-.footer {
+
+.conteiner-footer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--dark-bg-color);
+}
+
+.footer-label {
+    display: block;
+    margin-bottom: 20px;
+}
+.list-footer .socials:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .socials-list-footer {
@@ -264,11 +331,47 @@ letter-spacing: 0.03em;
 }
 
 
+
+
+
 /* Portfolio page */
 
 a {
     text-decoration: none;
 }
+.main-section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.portfolio-items {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px*3) / 3 );
+}
+.information {
+    border: 2px solid var(--border-color);
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: none;
+}
+
+.button-portfolio-items {
+    display: inline-block;
+    margin-left: 280px;
+    padding-bottom: 50px;
+}
+
+.button-portfolio:not(:last-child) {
+    margin-right: 8px;
+}
+
 
 .main-section-portfolio {
     background-color: var(--section-color) ;   
@@ -290,6 +393,7 @@ a {
 }
 
 .title-img-portfolio {
+    margin: 0;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
