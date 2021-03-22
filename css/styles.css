@@ -8,7 +8,8 @@
     --laber-color: #000000;
     --section-color: #E5E5E5;
     --section-team-color: #F5F4FA;
-    --border-color: #EEEEEE
+    --border-color: #EEEEEE;
+    --border-header: #ECECEC;
 
 }
 
@@ -70,7 +71,10 @@ button {
 /* Header section styles */
 
 .conteiner-header {
-    
+    background-color: var(--first-bloc-color);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-header);
 }
 
 .header-section {
@@ -133,10 +137,12 @@ button {
     padding-bottom: 200px;
     background: var(--dark-bg-color)
 }
+
 .hero .conteiner {
     max-width: 700px;
     margin: auto;
 }
+
 .page-title {
     display: inline-block;
     font-weight: 900;
@@ -147,6 +153,7 @@ button {
     text-transform: uppercase;
     color: var(--first-bloc-color);
 }
+
 .button-studio {
     margin-left: auto;
     margin-right: auto;
@@ -168,6 +175,7 @@ button {
     align-items: center;
     padding-top: 94px;
 }
+
 .latent-title {
     display: none;
 }
@@ -175,12 +183,15 @@ button {
 .main-points-section {
     display: flex;
 }
+
 .main-points {
     max-width: 270px;
 }
+
 .main-points:not(:last-child) {
     margin-right: 30px;
 }
+
 .main-title {
     font-weight: bold;
     font-size: 14px;
@@ -201,17 +212,20 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .photo-about-us {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
+
 .photo-about-us .photo {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 30px*3) / 3 );
 }
+
 .section-title {
     display: inline-block;
     margin-right: 396px;
@@ -231,10 +245,12 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .about-team-section .section-title {
     display: block;
     margin-bottom: 50px;
 }
+
 .about-team-section .list {
     display: flex;
     flex-wrap: wrap;
@@ -293,6 +309,7 @@ button {
     display: block;
     margin-bottom: 20px;
 }
+
 .list-footer .socials:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -336,16 +353,15 @@ button {
     color: var(--first-bloc-color);
 }
 
-
-
-
-
 /* Portfolio page */
+
 
 a {
     text-decoration: none;
 }
+
 .main-section-portfolio {
+    background-color: var(--section-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -357,12 +373,14 @@ a {
     margin-left: -30px;
     list-style: none;
 }
+
 .portfolio-items {
     width: 370px;
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 30px * 3) / 3 );
 }
+
 .information {
     padding-left: 24px;
     padding-top: 20px;
@@ -378,10 +396,12 @@ a {
     margin-right: 272px;
     margin-bottom: 50px;
 }
+
 .button-portfolio{
     padding-right: 22px;
     padding-left: 22px;
 }
+
 .button-portfolio:not(:last-child) {
     margin-right: 8px;
 }
