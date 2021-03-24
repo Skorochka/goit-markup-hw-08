@@ -17,9 +17,6 @@
 
 html {
 	box-sizing: border-box;
-    width: 1600px;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 *,
@@ -60,6 +57,8 @@ img {
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px ;
+    margin-left: auto;
+    margin-right: auto;
 }
 button {
     border: none;
@@ -70,11 +69,12 @@ button {
 
 /* Header section styles */
 
-.conteiner-header {
+.header {
     background-color: var(--first-bloc-color);
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: var(--border-header);
+
 }
 
 .header-section {
@@ -130,17 +130,16 @@ button {
 
 /*hero section styles*/
 .hero {
-    min-height: 100vh;
-    padding-left: 234px;
-    padding-right: 234px;
+    min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background: var(--dark-bg-color)
+    background-color: var(--dark-bg-color);
 }
 
 .hero .conteiner {
     max-width: 700px;
     margin: auto;
+    min-height: 100vh;
 }
 
 .page-title {
@@ -295,14 +294,18 @@ button {
 }
 
 
+
 /* Footer section styles */
 
-
+.footer {
+    margin-right: auto;
+    margin-left: auto;
+    background: var(--dark-bg-color);
+}
 .conteiner-footer {
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
-    background: var(--dark-bg-color);
 }
 
 .footer-label {
@@ -355,13 +358,15 @@ button {
 
 /* Portfolio page */
 
+.navigation-portfolio {
+    background-color: var(--section-color);
 
+}
 a {
     text-decoration: none;
 }
 
 .main-section-portfolio {
-    background-color: var(--section-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
