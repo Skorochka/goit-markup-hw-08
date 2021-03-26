@@ -74,7 +74,6 @@ button {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: var(--border-header);
-
 }
 
 .header-section {
@@ -130,7 +129,7 @@ button {
 
 /*hero section styles*/
 .hero {
-    min-height: 600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--dark-bg-color);
@@ -165,6 +164,7 @@ button {
     letter-spacing: 0.06em;
     color: var(--first-bloc-color);
     background-color: var(--accent-text-color);
+    padding: 10px 32px;
 }
 
 
@@ -285,7 +285,7 @@ button {
 
 .main-section, 
 .about-us-section {
-    background: var(--section-color);
+    background: var(--first-bloc-color);
 }
 
 .team-section {
@@ -359,7 +359,7 @@ button {
 /* Portfolio page */
 
 .navigation-portfolio {
-    background-color: var(--section-color);
+    background-color: var(--first-bloc-color);
 
 }
 a {
@@ -409,11 +409,6 @@ a {
 
 .button-portfolio:not(:last-child) {
     margin-right: 8px;
-}
-
-
-.main-section-portfolio {
-    background-color: var(--section-color) ;   
 }
 
 .button-portfolio {
