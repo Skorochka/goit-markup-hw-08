@@ -10,6 +10,7 @@
     --section-team-color: #F5F4FA;
     --border-color: #EEEEEE;
     --border-header: #ECECEC;
+    --icon-color: #AFB1B8;
 
 }
 
@@ -250,7 +251,7 @@ button {
     margin-bottom: 50px;
 }
 
-.about-team-section .list {
+.about-team-section .team-lead-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -293,6 +294,39 @@ button {
     text-align: center;
 }
 
+.social-icons .icon {
+    width: 20px;
+    height: 20px;
+}
+.social-icons {
+    display: inline-flex;
+    text-align: center;
+}
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--first-bloc-color);
+}
+
+.social-icon-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon-items .icon {
+    fill: var(--icon-color);
+}
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: var(--accent-text-color);
+}
+.social-icon-link:hover .icon,
+.social-icon-link:focus .icon {
+    fill: var(--first-bloc-color);
+}
 
 
 /* Footer section styles */
