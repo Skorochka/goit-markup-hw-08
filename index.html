@@ -16,7 +16,7 @@
         <nav class="header-section">
             <a class="title-label" href="./index.html" lang="en"> <span class="label-first-part">Web</span><span class="label-second-part-header" >Studio</span></a>
             <ul class="list list-header">
-                <li class="navigation-item"> <a class="link navigation" href="./index.html">Студия</a></li>
+                <li class="navigation-item"> <a class="link navigation studio" href="./index.html">Студия</a></li>
                 <li class="navigation-item"> <a class="link navigation" href="./portfolio.html">Портфолио</a></li>
                 <li class="navigation-item"> <a class="link navigation" href="">Контакты</a></li>
             </ul>
@@ -40,7 +40,7 @@
 <section class="hero">
     <div class="conteiner">
         <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button-studio">Заказать услугу</button>
+        <button type="button" class="button-studio" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 <!--Main points-->
@@ -92,9 +92,19 @@
     <div class="conteiner">
         <h2 class="section-title">Чем мы занимаемся</h2>
             <div class="photo-about-us">
-                <img class="photo" src="./images/box1.jpg" alt="Програмирование" width="370">
-                <img class="photo" src="./images/box2.jpg" alt="Тестирование" width="370">
-                <img class="photo" src="./images/box3.jpg" alt="Создание дизайна" width="370">
+                <ul class="list photo-list">
+                    <li class="item photo-item">
+                        <img class="photo" src="./images/box1.jpg" alt="Програмирование" width="370">
+                        <h3 class="name">Десктопные приложения</h3></li>
+                    <li class="item photo-item">
+                        <img class="photo" src="./images/box2.jpg" alt="Тестирование" width="370">
+                        <h3 class="name">Мобильные приложения</h3>
+                    </li>
+                    <li class="item photo-item">
+                        <img class="photo" src="./images/box3.jpg" alt="Создание дизайна" width="370">
+                        <h3 class="name">Дизайнерские решения</h3>
+                    </li>
+                </ul>
             </div>
     </div>
 </section>
@@ -340,6 +350,16 @@
         </div>
     </div>
 </footer>
-    
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="btn-close" type="button" data-modal-close>
+            <svg class="icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p>Какой то текст</p>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
