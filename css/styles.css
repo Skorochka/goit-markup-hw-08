@@ -468,7 +468,7 @@ button {
 
 .social-networks {
   margin-left: 70px;
-  margin-bottom: 20px;
+  margin-top: 12px;
 }
 .social-networks .title {
   font-weight: bold;
@@ -477,6 +477,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-bloc-color);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .social-networks .icon {
@@ -489,6 +491,72 @@ button {
 .social-networks .social-icon-link:hover,
 .social-networks .social-icon-link:focus {
   background-color: var(--accent-text-color);
+}
+
+.conteiner-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 78px;
+  margin-top: 12px;
+}
+
+.label-mail {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-bloc-color);
+  margin-bottom: 20px;
+}
+
+.input-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  background-color: var(--dark-bg-color);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: var(--social-footer-color);
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-mail {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  display: inline-flex;
+  padding-left: 29px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--first-bloc-color);
+
+  margin-left: 12px;
+}
+
+.btn-mail .icon {
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 /* label styles*/
