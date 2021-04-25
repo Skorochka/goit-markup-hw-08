@@ -1,0 +1,88 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  list-style: none;
+}
+
+.card-list__item {
+  width: 370px;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 3) / 3);
+  background-color: var(--first-bloc-color);
+  transition: border var(--animation) var(--cubic),
+    box-sizing var(--animation) var(--cubic),
+    box-shadow var(--animation) var(--cubic);
+
+  &:hover {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .card-list__item-text,
+  &:focus .card-list__item-text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.card-list__conteiner {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-list__description {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: none;
+}
+
+.card-list__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.card-list__name {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.card-list__item-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 63px 24px;
+  align-items: center;
+  opacity: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--first-bloc-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform var(--animation) var(--cubic),
+    opacity var(--animation) var(--cubic);
+}

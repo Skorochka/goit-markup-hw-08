@@ -1,0 +1,31 @@
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-customers__list {
+  display: flex;
+  align-items: center;
+}
+.regular-customers__link {
+  display: inline-flex;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid currentColor;
+  fill: var(--icon-color);
+  transition: fill var(--animation) var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.regular-customers__item {
+  flex-basis: calc((100% - 170px) / 6);
+}
+.regular-customers__item:not(:last-child) {
+  margin-right: 30px;
+}

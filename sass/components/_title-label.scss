@@ -1,0 +1,25 @@
+/* label styles*/
+
+.title-label {
+  margin-right: 93px;
+  align-items: center;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.title-label__first-part {
+  color: var(--accent-text-color);
+}
+
+.title-label__second-part {
+  color: var(--laber-color);
+}
+
+.title-label__footer-second-part {
+  color: var(--first-bloc-color);
+}

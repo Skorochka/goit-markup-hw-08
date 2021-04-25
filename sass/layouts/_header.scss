@@ -1,0 +1,14 @@
+/* Header section styles */
+
+.header {
+  background-color: var(--first-bloc-color);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-header);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
