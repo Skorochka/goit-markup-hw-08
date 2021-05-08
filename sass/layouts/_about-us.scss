@@ -1,4 +1,14 @@
 .about-us {
+  @media screen and (max-width: 1199.99px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--first-bloc-color);
+  }
+
   padding-top: 94px;
   padding-bottom: 94px;
   background: var(--first-bloc-color);
