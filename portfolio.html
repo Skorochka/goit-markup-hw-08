@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="conteiner">
-            <nav class="header__nav">
-                <a class="title-label" href="./index.html" lang="en"> <span class="title-label__first-part">Web</span><span class="title-label__second-part" >Studio</span></a>
+<header class="header">
+    <div class="conteiner">
+        <nav class="header__nav">
+            <a class="title-label" href="./index.html" lang="en"> <span class="title-label__first-part">Web</span><span
+                    class="title-label__second-part">Studio</span></a>
+            <button type="button" class="menu-button" data-menu-button aria-expanded="false"
+                aria-controls="menu-conteiner">
+                <svg class="icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-conteiner" id="menu-conteiner" data-menu>
                 <ul class="list navigation-list">
-                    <li class="navigation-list__item"> <a class="link navigation-list__link" href="./index.html">Студия</a></li>
-                    <li class="navigation-list__item"> <a class="link navigation-list__link navigation-list__link-active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation-list__item"> <a
+                            class="link navigation-list__link"
+                            href="./index.html">Студия</a></li>
+                    <li class="navigation-list__item"> <a class="link navigation-list__link navigation-list__link-active"
+                            href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation-list__item"> <a class="link navigation-list__link" href="">Контакты</a></li>
                 </ul>
                 <ul class="list contact-list">
-                    <li class="contact-list__item"><a class="link contact-list__link" href="mailto:info@devstudio.com">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                    <li class="contact-list__item"><a class="link contact-list__link" href="tel:+380961111111">
-                        <svg class="icon" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
+                    <li class="contact-list__item contact-list__item-mail"><a class="link contact-list__link"
+                            href="mailto:info@devstudio.com">
+                            <svg class="icon" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="contact-list__item contact-list__item-number"><a class="link contact-list__link"
+                            href="tel:+380961111111">
+                            <svg class="icon" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <!--main navigation-->
+                <ul class="list menu-conteiner__network">
+                    <li class="menu-conteiner__network-item">
+                        <a class="link" href="">Instagram</a>
+                    </li>
+                    <li class="menu-conteiner__network-item">
+                        <a class="link" href="">Twitter</a>
+                    </li>
+                    <li class="menu-conteiner__network-item">
+                        <a class="link" href="">Facebook</a>
+                    </li>
+                    <li class="menu-conteiner__network-item">
+                        <a class="link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!-- <main>
+        
         <section class="portfolio">
         <div class="conteiner portfolio__conteiner">
                 <h1 class="latent-title">Наше Портфолио</h1>
@@ -164,7 +193,7 @@
 
     </main>
     <footer class="footer">
-        <!--Contacts-->
+        
         <div class="conteiner footer__conteiner">
             <div class="conteiner footer__contact">
                     <a class="title-label footer__label" href="" lang="en"> <span class="title-label__first-part">Web</span><span
@@ -222,7 +251,7 @@
                     </button>
                 </form>
         </div>
-    </footer>
-        
+    </footer> -->
+    <script src="./js/menu.js"></script>
     </body>
     </html>

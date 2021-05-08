@@ -5,10 +5,130 @@
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-header);
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-height: 80px;
+  }
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-height: 80px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    margin-left: auto;
+    transition: fill var(--animation) var(--cubix);
+  }
+
+  .menu-button .icon-close {
+    display: none;
+  }
+
+  .menu-button.is-open .icon-close {
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+
+  .menu-button:hover .icon-menu,
+  .menu-button:focus .icon-menu {
+    fill: var(--accent-text-color);
+  }
+
+  .menu-button:hover .icon-close,
+  .menu-button:focus .icon-close {
+    fill: var(--accent-text-color);
+  }
+
+  .menu-conteiner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.is-open {
+      display: block;
+    }
+
+    background-color: var(--first-bloc-color);
+    width: 100%;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu-conteiner__network {
+    display: flex;
+    margin-top: 64px;
+  }
+
+  .menu-conteiner__network-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1, 22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-text-color);
+    margin-right: 10px;
+  }
+
+  .menu-conteiner__network-item:not(:last-child):after {
+    content: "";
+    width: 22px;
+    height: 0px;
+    left: 135px;
+    top: 726px;
+    margin-left: 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .menu-conteiner__network {
+    display: none;
+  }
+}
+
+.menu-conteiner {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }

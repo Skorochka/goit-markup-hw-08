@@ -12,7 +12,7 @@ html {
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   color: var(--main-text-color);
 }
 
@@ -32,19 +32,27 @@ body {
   margin: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
+
 button {
   border: none;
 }
