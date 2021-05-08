@@ -946,17 +946,14 @@ a {
 .main-section {
   align-items: center;
   background: var(--first-bloc-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) {
-  .main-section {
-    padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main-section {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1029,7 +1026,6 @@ a {
 }
 
 .about-us {
-  padding-top: 94px;
   padding-bottom: 94px;
   background: var(--first-bloc-color);
 }
@@ -1043,7 +1039,6 @@ a {
 @media screen and (min-width: 1200px) {
   .about-us {
     display: block;
-    padding-top: 94px;
     padding-bottom: 94px;
     background: var(--first-bloc-color);
   }
