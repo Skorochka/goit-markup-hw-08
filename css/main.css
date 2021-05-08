@@ -628,11 +628,13 @@ a {
   list-style: none;
 }
 
+.conteiner__card-list {
+  margin-top: 40px;
+}
+
 .card-list__item {
-  width: 370px;
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 30px * 3) / 3);
   background-color: var(--first-bloc-color);
   transition: border var(--animation) var(--cubic), box-sizing var(--animation) var(--cubic), box-shadow var(--animation) var(--cubic);
 }
@@ -647,6 +649,25 @@ a {
 .card-list__item:focus .card-list__item-text {
   opacity: 1;
   transform: translateY(0%);
+}
+
+@media screen and (max-width: 767px) {
+  .card-list__item {
+    flex-basis: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    width: 370px;
+  }
 }
 
 .card-list__conteiner {
@@ -679,13 +700,14 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .card-list__item-text {
   position: absolute;
+  z-index: 50;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1165,6 +1187,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -1309,21 +1332,39 @@ a {
 }
 
 .portfolio__conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__conteiner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__button-list {
-  display: inline-block;
-  margin-left: 270px;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__button-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -1344,6 +1385,12 @@ a {
 .portfolio__btn:hover {
   color: var(--first-bloc-color);
   background-color: var(--accent-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__btn {
+    margin-bottom: 15px;
+  }
 }
 
 .backdrop {
