@@ -33,7 +33,7 @@
 @media screen and (max-width: 767px) {
   .menu-button {
     position: relative;
-    z-index: 1;
+    z-index: 101;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -75,6 +75,8 @@
 
     &.is-open {
       display: block;
+      position: absolute;
+      z-index: 100;
     }
 
     background-color: var(--first-bloc-color);

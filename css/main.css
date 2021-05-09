@@ -765,7 +765,7 @@ a {
 @media screen and (max-width: 767px) {
   .menu-button {
     position: relative;
-    z-index: 1;
+    z-index: 101;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -807,6 +807,8 @@ a {
   }
   .menu-conteiner.is-open {
     display: block;
+    position: absolute;
+    z-index: 100;
   }
   .menu-conteiner__network {
     display: flex;
@@ -1010,13 +1012,13 @@ a {
 }
 
 .main-section__item {
-  margin-left: 30px;
   margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .main-section__item {
     width: calc((100% - 30px * 2) / 2);
+    margin-left: 30px;
   }
 }
 
