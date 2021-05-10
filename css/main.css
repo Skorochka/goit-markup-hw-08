@@ -569,6 +569,15 @@ a {
     color: var(--accent-text-color);
     transform: translateY(-32px);
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .contact-list__item-number {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .contact-list__link .icon {
     display: none;
   }
@@ -816,11 +825,20 @@ a {
   .menu-conteiner__network-item {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1, 22;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
     margin-right: 10px;
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .menu-conteiner__network-item {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .menu-conteiner__network-item:not(:last-child):after {
     content: "";
     width: 22px;

@@ -96,11 +96,15 @@
   .menu-conteiner__network-item {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1, 22;
+    line-height: 1.22;
     letter-spacing: 0.02em;
 
     color: var(--accent-text-color);
     margin-right: 10px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 10px;
+    }
   }
 
   .menu-conteiner__network-item:not(:last-child):after {
